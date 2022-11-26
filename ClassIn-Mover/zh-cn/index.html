@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="../ClassIn_Mover.ico">
+    <link rel="stylesheet" href="../../css/light.css">
+    <link rel="stylesheet" href="../../css/behaviors.css">
+    <link rel="stylesheet" href="../../css/frameworks.css">
+    <link rel="stylesheet" href="../../css/github.css">
+    <meta name="google-site-verification" content="wnyTkZBl2jDkJuDlI_KTE0pR6-kcU5A8sGICJstYizc" />
+    <meta name="msvalidate.01" content="70482277736EF4BC3FF0DBF5016ACF70" />
+    <meta name="baidu-site-verification" content="code-tSAzGuZJIo" />
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?dc57b703fb90414c436d5bc84dafad34";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <title>ClassIn Mover</title>
+</head>
+
+<body>
+    <div class="markdown-body entry-content container-lg" style="margin-left: 10%;margin-right: 10%">
+        <a href="https://github.com/CarlGao4/ClassIn-Mover">
+            <h1><img src="../ClassIn_Mover_32.png" alt="ClassIn-Mover icon 32x32"> ClassIn Mover <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/CarlGao4/ClassIn-Mover/total?label=%E4%B8%8B%E8%BD%BD%E9%87%8F">
+            </h1>
+        </a>
+        <p><a href="..">English</a></p>
+        <p>用于移动 <code>ClassIn</code> 教室窗口以退出专注学习模式的小程序。</p>
+        <p>支持的 <code>ClassIn</code> 版本：<code>3.0.2.130</code> ~ <code>3.0.5.1</code>, <code>3.0.7.x</code>,
+            <code>4.x</code>。（早于 <code>3.0.2.130</code> 的版本没有专注学习模式）
+        </p>
+        <p>在将来的更新过程中，此程序可能会失效。</p>
+        <h2>下载地址</h2>
+        <p>
+            <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/CarlGao4/ClassIn-Mover?label=%E6%AD%A3%E5%BC%8F%E7%89%88">
+            <a href="https://github.com/CarlGao4/ClassIn-Mover/releases">GitHub release</a>，或<a href="https://gitee.com/CarlGao4/ClassIn-Mover/releases">Gitee mirror</a>。
+        </p>
+        <h2>组件</h2>
+        <h3>ClassIn Mover Classic</h3>
+        <p>除了这一版采用了Tk的GUI，操作方式于v1.0.0没有区别。</p>
+        <h4>使用方法</h4>
+        <p>在正常进入教室前，请运行本程序。</p>
+        <p>此后，程序将自动检测ClassIn教室窗口，并组织它占用整个屏幕。
+        </p>
+        <p>正常运行时，程序会每秒钟输出一次运行状态。
+        </p>
+        <h3>ClassIn Mover</h3>
+        <p>进入ClassIn教室之前，运行ClassIn Mover，在屏幕左上方会出现一个半透明的ClassIn Mover图标。左键单击可以打开主菜单，可以在这里选择一个ClassIn窗口，并对其最大化、最小化、置顶、取消置顶。
+        </p>
+        <p>默认情况下，自动处理窗口处于开启状态，当检测到新ClassIn窗口时会自动尝试将其退出专注学习模式。可以右键点击悬浮球关闭这一特性。注意，主菜单上的自动处理按钮只会对选中的窗口处理，而不会打开这一功能。</p>
+        <h2>已知问题</h2>
+        <ul>
+            <li><strong>该程序调用Windows的本地API，因此只能在Windows上运行。</strong></li>
+        </ul>
+        <h2>反馈</h2>
+        <p>你可以在 <a href="https://github.com/CarlGao4/ClassIn-Mover/issues">GitHub issues</a> 上反馈问题或者提交需求。Gitee issues已经被关闭。注意，在提问及交流时请使用英语，因为我们尊重广大开源社区。
+        </p>
+        <h2>版本历史记录</h2>
+        <h3>1.0.0</h3>
+
+        <blockquote>
+            <p>发布日期：2020/6/30</p>
+        </blockquote>
+
+        <ul>
+            <li><code>ClassIn-Mover</code> 的第一个稳定版本。</li>
+        </ul>
+
+        <h3>1.0.1</h3>
+
+        <blockquote>
+            <p>发布日期：2020/7/2</p>
+        </blockquote>
+
+        <ul>
+            <li>优化窗口搜索机制、降低日志延迟。</li>
+        </ul>
+
+        <h3>1.0.2</h3>
+
+        <blockquote>
+            <p>发布日期：2020/7/3</p>
+        </blockquote>
+
+        <ul>
+            <li>优化等待机制。</li>
+        </ul>
+
+        <h3>1.0.3</h3>
+
+        <blockquote>
+            <p>发布日期：2020/7/6</p>
+        </blockquote>
+
+        <ul>
+            <li>提高日志等级。</li>
+        </ul>
+
+        <h3>1.0.4</h3>
+
+        <blockquote>
+            <p>发布日期：2021/1/15</p>
+        </blockquote>
+
+        <ul>
+            <li>
+                <p>为避免有时无法退出全屏，启动程序时会要求管理员权限，未能获取到时会输出警告。</p>
+            </li>
+            <li>
+                <p>输出警告时会使用黄色，输出错误时会使用红色。</p>
+            </li>
+        </ul>
+
+        <h3>1.0.5</h3>
+
+        <blockquote>
+            <p>发布日期：2022/6/13</p>
+        </blockquote>
+
+        <ul>
+            <li>优化内存。</li>
+        </ul>
+
+        <hr />
+
+        <h3>2.0.0</h3>
+
+        <blockquote>
+            <p>发布日期：2022/11/24</p>
+        </blockquote>
+
+        <ul>
+            <li>
+                <p>推出新的现代化ClassIn Mover，不再是经典版固定模式和功能</p>
+            </li>
+            <li>
+                <p>图形化界面</p>
+            </li>
+            <li>
+                <p>手动最大化、最小化、置顶、取消置顶ClassIn窗口</p>
+            </li>
+            <li>
+                <p>拖动调整窗口大小和位置</p>
+            </li>
+            <li>
+                <p>最小化到悬浮球，防止窗口挡住任务栏而无法操作</p>
+            </li>
+            <li>
+                <p>将结束经典版支持</p>
+            </li>
+        </ul>
+
+        <h3>2.0.1</h3>
+
+        <blockquote>
+            <p>发布日期：2022/11/25</p>
+        </blockquote>
+
+        <ul>
+            <li>自动检查更新</li>
+        </ul>
+
+        <h3>2.0.2</h3>
+
+        <blockquote>
+            <p>发布日期：2022/11/26</p>
+        </blockquote>
+
+        <ul>
+            <li>
+                <p>修复Bug：在大多数情况下，自动处理窗口会导致窗口全屏，挡住任务栏</p>
+            </li>
+            <li>
+                <p>添加“处理全部窗口”到右键菜单</p>
+            </li>
+            <li>
+                <p>在检测到新窗口时，等待8.5s后再进行处理，以确保已经正常进入教室</p>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
