@@ -1,1 +1,14 @@
-{"version":"2.0.2","feature":"- Fix bug: Window is full screen most of time after patching\n- Add \"Patch all\" to right-click menu\n- Auto patch window will now delay 8.5s when a new window detected, to ensure that the classroom has successfully entered. ","detail":"https://github.com/CarlGao4/ClassIn-Mover/releases/tag/v2.0.2","filename":"ClassIn_Mover_2.0.2.zip","download":["https://github.com/CarlGao4/ClassIn-Mover/releases/download/v2.0.2/ClassIn_Mover_2.0.2.zip","https://gitee.com/CarlGao4/ClassIn-Mover/releases/download/v2.0.2/ClassIn_Mover_2.0.2.zip"]}
+{
+    "version": "2.0.2",
+    "feature": "- Fix bug: Window is full screen most of time after patching\n- Add \"Patch all\" to right-click menu\n- Auto patch window will now delay 8.5s when a new window detected, to ensure that the classroom has successfully entered. ",
+    "detail": "https://github.com/CarlGao4/ClassIn-Mover/releases/tag/v2.0.2",
+    "filename": "ClassIn_Mover_2.0.2.zip",
+    "download": [
+        "https://github.com/CarlGao4/ClassIn-Mover/releases/download/v2.0.2/ClassIn_Mover_2.0.2.zip",
+        "https://gitee.com/CarlGao4/ClassIn-Mover/releases/download/v2.0.2/ClassIn_Mover_2.0.2.zip"
+    ],
+    "download_description": [
+        "GitHub latest release (2.0.2)",
+        "Gitee morror (2.0.2)"
+    ]
+}
