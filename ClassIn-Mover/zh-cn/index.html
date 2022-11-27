@@ -40,7 +40,14 @@
         <h2>下载地址</h2>
         <p> <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/CarlGao4/ClassIn-Mover?label=%E6%AD%A3%E5%BC%8F%E7%89%88">
         </p>
-        <a id="downloadlist">Loading download items...</a>
+        <p>
+            <a href="https://github.com/CarlGao4/ClassIn-Mover/releases/download/v2.0.2/ClassIn_Mover_2.0.2.zip">Download
+                from Github Release (github.com)</a>
+        </p>
+        <p>
+            <a href="https://gitee.com/CarlGao4/ClassIn-Mover/releases/download/v2.0.2/ClassIn_Mover_2.0.2.zip">Download
+                from Gitee mirror (gitee.com)</a>
+        </p>
         <h2>组件</h2>
         <h3>ClassIn Mover Classic</h3>
         <p>除了这一版采用了Tk的GUI，操作方式于v1.0.0没有区别。</p>
@@ -61,31 +68,6 @@
             <h2>版本历史记录</h2>
         </a>
     </div>
-    <script>
-        (function() {
-            try {
-                var xhr = new XMLHttpRequest()
-            } catch (error) {
-                var xhr = new ActiveXObject()
-            }
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState == 4) {
-                    if (xhr.status == 200) {
-                        j = JSON.parse(xhr.responseText);
-                        p = document.getElementById("downloadlist");
-                        p.innerHTML = "";
-                        for (var i = 0; i < j["download"].length; i++) {
-                            p = document.createElement("p");
-                            p.innerHTML = '<a href="' + j["download"][i] + '">' + j["download_description"][i] + "</a>";
-                        }
-                    } else {
-                        document.getElementById("downloadlist").innerHTML = "Loading download list failed. "
-                    }
-                }
-            }
-            xhr.open("get", "https://carlgao4.github.io/ClassIn-Mover/update.json", true);
-        })()
-    </script>
 </body>
 
 </html>
