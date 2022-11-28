@@ -1,6 +1,6 @@
 {
     "version": "2.1.0.1",
-    "feature": "- 正式支持简体中文\n- Add button to open our homepage\n- Fix bug: May receive message box even the main window has been closed* Fix bug: Chinese translation cause can't move or resize window",
+    "feature": "- 正式支持简体中文\n- Add button to open our homepage\n- Fix bug: May receive message box even the main window has been closed\n* Fix bug: Chinese translation cause can't move or resize window",
     "detail": "https://carlgao4.github.io/ClassIn-Mover/releases/v2.1.0.1",
     "filename": "ClassIn_Mover_2.1.0.1.zip",
     "download": [
