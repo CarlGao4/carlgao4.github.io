@@ -1,5 +1,5 @@
 ---
-title: ClassIn Mover Release v1.0.0
+title: "ClassIn Mover Release v1.0.0"
 ---
 
 # ClassIn Mover Release v1.0.0
