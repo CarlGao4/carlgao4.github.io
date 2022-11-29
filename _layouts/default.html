@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <meta name="google-site-verification" content="wnyTkZBl2jDkJuDlI_KTE0pR6-kcU5A8sGICJstYizc" />
     <meta name="msvalidate.01" content="70482277736EF4BC3FF0DBF5016ACF70" />
+    {% if url.post contains "ClassIn-Mover" %}
     <script>
         var _hmt = _hmt || [];
         (function() {
@@ -21,6 +22,7 @@
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
+    {% endif %}
     {% include head-custom.html %}
   </head>
   <body>
