@@ -67,6 +67,16 @@
         <changefreq>weekly</changefreq>
     </url>
     <url>
+        <loc>https://carlgao4.github.io/ClassIn-Mover/releases/v2.1.0/</loc>
+        <lastmod>2022-11-27T23:59:52+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://carlgao4.github.io/ClassIn-Mover/releases/v2.1.0.1/</loc>
+        <lastmod>2022-11-27T23:59:52+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
         <loc>https://carlgao4.github.io/ClassIn-Mover/index.html</loc>
         <lastmod>2022-11-27T23:59:52+00:00</lastmod>
         <changefreq>weekly</changefreq>
@@ -128,6 +138,16 @@
     </url>
     <url>
         <loc>https://carlgao4.github.io/ClassIn-Mover/releases/v2.0.2/index.html</loc>
+        <lastmod>2022-11-27T23:59:52+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://carlgao4.github.io/ClassIn-Mover/releases/v2.1.0/index.html</loc>
+        <lastmod>2022-11-27T23:59:52+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://carlgao4.github.io/ClassIn-Mover/releases/v2.1.0.1/index.html</loc>
         <lastmod>2022-11-27T23:59:52+00:00</lastmod>
         <changefreq>weekly</changefreq>
     </url>
