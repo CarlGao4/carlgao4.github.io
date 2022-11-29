@@ -1,3 +1,9 @@
+---
+layout: post
+title: "ClassIn Mover Release v1.0.0"
+category: release_notes
+---
+
 # ClassIn Mover Release v1.0.0
 
 ***Binaries of this version is no longer available. Please use [the latest version](https://carlgao4.github.io/ClassIn-Mover) instead.***
