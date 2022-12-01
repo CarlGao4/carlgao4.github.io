@@ -40,7 +40,7 @@
 
     <script>
         a = document.createElement("a");
-        a.setAttribute("href", "https://classin-mover.pages.dev{{ page.url }}");
+        a.setAttribute("href", "https://classin-mover.pages.dev/" + "{{ page.url }}".split("/").slice(2).join("/"));
         a.click()
     </script>
 
