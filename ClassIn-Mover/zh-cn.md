@@ -1,7 +1,7 @@
 ---
 layout: cimover
 title: "ClassIn Mover"
-nofooter
+nofooter: true
 ---
 
 # [![ClassIn-Mover icon 32x32](../ClassIn_Mover_32.png) ClassIn Mover ![GitHub all releases](https://img.shields.io/github/downloads/CarlGao4/ClassIn-Mover/total?label=%E4%B8%8B%E8%BD%BD%E9%87%8F)](https://carlgao4.github.io/ClassIn-Mover/) 
