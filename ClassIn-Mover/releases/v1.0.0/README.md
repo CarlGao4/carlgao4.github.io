@@ -1,6 +1,7 @@
 ---
 layout: cimover
 title: ClassIn Mover Release v1.0.0
+baseurl: carlgao4.github.io
 ---
 
 # ClassIn Mover Release v1.0.0
