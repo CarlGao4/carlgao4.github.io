@@ -37,12 +37,12 @@
     <main id="content" class="main-content" role="main">
         {% if page.downloadlink %}
         <h4><a id="dl_gh_direct" href="{{ page.downloadlink }}">Dwonload this release</a></h4>
-        {{ content }}
+        {% endif %} {{ content }}
 
     </main>
 
     <footer class="site-footer">
-        <div><a href="https://carlgao4.github.io/ClassIn-Mover/">Home page</a></div>
+        <span class="site-footer-credits"><a href="https://carlgao4.github.io/ClassIn-Mover/">Home page</a></span>
     </footer>
 </body>
 
