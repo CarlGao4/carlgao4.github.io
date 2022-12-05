@@ -1,14 +1,14 @@
 {
-    "version": "2.1.0.2",
-    "feature": "- 正式支持简体中文\n- Add button to open our homepage\n- Fix bug: May receive message box even the main window has been closed\n* Fix bug: Chinese translation cause can't move or resize window- Fix bug: program may stop working after long time\n- Fix bug: ClassIn window size can be changed into negative number which will cause ClassIn stop responding\n- Add \"Usage\"button",
-    "detail": "https://classin-mover.pages.dev/releases/v2.1.0.2",
-    "filename": "ClassIn_Mover_2.1.0.2.zip",
+    "version": "2.1.1",
+    "feature": "- Fix grammar and translation\n- The main window will appear beside the floating window\n- Add alternative update link\n- Optimize codes",
+    "detail": "https://classin-mover.pages.dev/releases/v2.1.1",
+    "filename": "ClassIn_Mover_2.1.1.zip",
     "download": [
-        "https://github.com/CarlGao4/ClassIn-Mover/releases/download/v2.1.0.2/ClassIn_Mover_2.1.0.2.zip",
-        "https://gitee.com/CarlGao4/ClassIn-Mover/releases/download/v2.1.0.2/ClassIn_Mover_2.1.0.2.zip"
+        "https://github.com/CarlGao4/ClassIn-Mover/releases/download/v2.1.1/ClassIn_Mover_2.1.1.zip",
+        "https://gitee.com/CarlGao4/ClassIn-Mover/releases/download/v2.1.1/ClassIn_Mover_2.1.1.zip"
     ],
-    "download_description": [
-        "GitHub latest release (2.1.0.2)",
-        "Gitee mirror (2.1.0.2)"
+    "download_descriptizon": [
+        "GitHub latest release (2.1.1)",
+        "Gitee mirror (2.1.1)"
     ]
 }
