@@ -1,14 +1,14 @@
 {
-    "version": "2.1.1",
-    "feature": "- Fix grammar and translation\n- The main window will appear beside the floating window\n- Add alternative update link\n- Optimize codes",
-    "detail": "https://classin-mover.pages.dev/releases/v2.1.1",
-    "filename": "ClassIn_Mover_2.1.1.zip",
+    "version": "2.1.2",
+    "feature": "- Fix bug: window will still be patched if \"Auto patch new window\" is disabled after a new classroom window is opened and before the 8.5s delay expires\n- Add \"Blogs\" button to view our latest articles\n- The settings will be preserved after the program exits",
+    "detail": "https://classin-mover.pages.dev/releases/v2.1.2",
+    "filename": "ClassIn_Mover_2.1.2.zip",
     "download": [
-        "https://github.com/CarlGao4/ClassIn-Mover/releases/download/v2.1.1/ClassIn_Mover_2.1.1.zip",
-        "https://gitee.com/CarlGao4/ClassIn-Mover/releases/download/v2.1.1/ClassIn_Mover_2.1.1.zip"
+        "https://github.com/CarlGao4/ClassIn-Mover/releases/download/v2.1.2/ClassIn_Mover_2.1.2.zip",
+        "https://gitee.com/CarlGao4/ClassIn-Mover/releases/download/v2.1.2/ClassIn_Mover_2.1.2.zip"
     ],
     "download_descriptizon": [
-        "GitHub latest release (2.1.1)",
-        "Gitee mirror (2.1.1)"
+        "GitHub latest release (2.1.2)",
+        "Gitee mirror (2.1.2)"
     ]
 }
