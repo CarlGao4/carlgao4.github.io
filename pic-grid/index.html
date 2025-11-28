@@ -752,54 +752,52 @@
                 newX = currentRect.x + currentRect.width - newWidth;
                 newY = currentRect.y + currentRect.height - newHeight;
             }
-            if (gridInfo.ratio !== 0) {
-                if (resizeHandle === 'bottom-right' || resizeHandle === 'top-left') {
-                    newHeight = newWidth / targetAspectRatio;
-                    if (resizeHandle === 'top-left') {
-                        newY = currentRect.y + currentRect.height - newHeight;
-                    }
-                } else {
-                    newWidth = newHeight * targetAspectRatio;
-                    if (resizeHandle === 'bottom-left' || resizeHandle === 'top-left') {
-                        newX = currentRect.x + currentRect.width - newWidth;
-                    }
+            if (resizeHandle === 'bottom-right' || resizeHandle === 'top-left') {
+                newHeight = newWidth / targetAspectRatio;
+                if (resizeHandle === 'top-left') {
+                    newY = currentRect.y + currentRect.height - newHeight;
                 }
-                let corrected = false;
+            } else {
+                newWidth = newHeight * targetAspectRatio;
+                if (resizeHandle === 'bottom-left' || resizeHandle === 'top-left') {
+                    newX = currentRect.x + currentRect.width - newWidth;
+                }
+            }
+            let corrected = false;
+            if (newX + newWidth > cropCanvas.width) {
+                newWidth = cropCanvas.width - newX;
+                newHeight = newWidth / targetAspectRatio;
+                corrected = true;
+            }
+            if (newY + newHeight > cropCanvas.height) {
+                newHeight = cropCanvas.height - newY;
+                newWidth = newHeight * targetAspectRatio;
+                corrected = true;
+            }
+            if (newX < 0) {
+                newX = 0;
                 if (newX + newWidth > cropCanvas.width) {
-                    newWidth = cropCanvas.width - newX;
+                    newWidth = cropCanvas.width;
                     newHeight = newWidth / targetAspectRatio;
-                    corrected = true;
                 }
+                corrected = true;
+            }
+            if (newY < 0) {
+                newY = 0;
                 if (newY + newHeight > cropCanvas.height) {
-                    newHeight = cropCanvas.height - newY;
+                    newHeight = cropCanvas.height;
                     newWidth = newHeight * targetAspectRatio;
-                    corrected = true;
                 }
-                if (newX < 0) {
-                    newX = 0;
-                    if (newX + newWidth > cropCanvas.width) {
-                        newWidth = cropCanvas.width;
-                        newHeight = newWidth / targetAspectRatio;
-                    }
-                    corrected = true;
+                corrected = true;
+            }
+            if (corrected) {
+                if (resizeHandle === 'bottom-left' || resizeHandle === 'top-left') {
+                    newX = currentRect.x + currentRect.width - newWidth;
+                    if (newX < 0) newX = 0;
                 }
-                if (newY < 0) {
-                    newY = 0;
-                    if (newY + newHeight > cropCanvas.height) {
-                        newHeight = cropCanvas.height;
-                        newWidth = newHeight * targetAspectRatio;
-                    }
-                    corrected = true;
-                }
-                if (corrected) {
-                    if (resizeHandle === 'bottom-left' || resizeHandle === 'top-left') {
-                        newX = currentRect.x + currentRect.width - newWidth;
-                        if (newX < 0) newX = 0;
-                    }
-                    if (resizeHandle === 'top-right' || resizeHandle === 'top-left') {
-                        newY = currentRect.y + currentRect.height - newHeight;
-                        if (newY < 0) newY = 0;
-                    }
+                if (resizeHandle === 'top-right' || resizeHandle === 'top-left') {
+                    newY = currentRect.y + currentRect.height - newHeight;
+                    if (newY < 0) newY = 0;
                 }
             }
             if (newWidth <= 1) newWidth = 1;
