@@ -323,7 +323,6 @@
             border-top: 1px solid #eee;
         }
 
-        /* 裁剪手柄 */
         .resize-handle {
             position: absolute;
             width: 12px;
@@ -387,7 +386,6 @@
         </header>
 
         <div class="main-content">
-            <!-- 上传区域 -->
             <div class="section">
                 <h2 class="section-title">1. 上传图片</h2>
                 <div class="upload-area" id="uploadArea">
@@ -433,12 +431,10 @@
 
             <div class="divider"></div>
 
-            <!-- 裁剪区域 -->
             <div class="section">
                 <h2 class="section-title">2. 裁剪图片</h2>
                 <div class="crop-container" id="cropContainer">
                     <canvas id="cropCanvas"></canvas>
-                    <!-- 裁剪手柄将通过JS动态添加 -->
                 </div>
                 <button class="btn" id="cropBtn" disabled>
                     <i>✂️</i> 裁剪并生成
@@ -447,7 +443,6 @@
 
             <div class="divider"></div>
 
-            <!-- 结果展示区域 -->
             <div class="section">
                 <h2 class="section-title">3. 切图结果</h2>
                 <div class="result-container" id="resultContainer">
@@ -572,7 +567,10 @@
 
             gridInfo.rows = parseInt(rowsInput.value) || 3;
             gridInfo.cols = parseInt(colsInput.value) || 2;
-            gridInfo.ratio = parseInt(ratioInput.value) || 30;
+            gridInfo.ratio = parseInt(ratioInput.value);
+            if (!gridInfo.ratio && gridInfo.ratio !== 0) {
+                gridInfo.ratio = 30;
+            }
 
             if (gridInfo.ratio === 0) {
                 targetAspectRatio = gridInfo.cols / gridInfo.rows;
